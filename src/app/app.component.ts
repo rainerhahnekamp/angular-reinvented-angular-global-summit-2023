@@ -17,6 +17,7 @@ import { LoadingState } from './loading-state.service';
     <div class="flex gap-x-4">
       <a mat-raised-button routerLink="/">Home</a>
       <a mat-raised-button routerLink="/holidays">Holidays</a>
+      <a mat-raised-button routerLink="/newsletter">Newsletter</a>
     </div>
     <router-outlet />
   </div>`,

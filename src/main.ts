@@ -18,6 +18,7 @@ import { map, Observable } from 'rxjs';
 import { loadingInterceptor } from './app/loading-interceptor';
 import { AuthService } from './app/auth.service';
 import { UnauthorizedComponent } from './app/holidays/unauthorized.component';
+import { NewsletterComponent } from './app/newsletter.component';
 
 bootstrapApplication(AppComponent, {
   providers: [
@@ -38,6 +39,7 @@ bootstrapApplication(AppComponent, {
         path: 'holidays',
         loadChildren: () => import('./app/holidays/holiday-routes'),
       },
+      { path: 'newsletter', component: NewsletterComponent },
       { path: 'unauthorized', component: UnauthorizedComponent },
     ]),
     {
